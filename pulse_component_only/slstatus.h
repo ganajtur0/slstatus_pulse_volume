@@ -79,8 +79,10 @@ const char *uid(void);
 /* volume */
 const char *vol_perc(const char *card);
 
+/*-------------------------------------------------------------*/
 /* pulseaudio volume */
 const char *pulse_volume(const char *chargs);
+/*-------------------------------------------------------------*/
 
 /* wifi */
 const char *wifi_perc(const char *interface);

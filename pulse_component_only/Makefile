@@ -28,7 +28,9 @@ COM =\
 	components/user\
 	components/volume\
 	components/wifi\
+	# ---------------------------------------------
 	components/pulse_volume
+	# ---------------------------------------------
 
 all: slstatus
 

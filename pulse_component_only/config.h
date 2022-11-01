@@ -59,24 +59,37 @@ static const char unknown_str[] = "n/a";
  * uptime              system uptime                   NULL
  * username            username of current user        NULL
  * vol_perc            OSS/ALSA volume in percent      mixer file (/dev/mixer)
- *                                                     NULL on OpenBSD
+ * 						       NULL on OpenBSD
+ *
+ *
+ *
+   ----------------------------------------------------  
+ * pulse_volume        pulseaudio def. device vol.     volume_str,muted_str
+   ----------------------------------------------------  
+ * 
+ *
+ *
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 
-/* function     format string       function_arguments      update_once*/
+/* hopefully you understand what I did here */
+/* ----------------------------------------------------  */
 static const struct arg args[] = {
 
-	{ pulse_volume,		"%s",		"🔊,🔇",1   },
-	{ separator,		"%s",		"|"    ,0	},
-	{ keyboard_indicators,	"%s",	"cn"   ,0   },
-	{ separator,		"%s",		"|"	   ,0   },
-	{ ram_used,		    "%s/",		NULL   ,0   },
-	{ ram_total,		"%s",		NULL   ,0   },
-	{ separator,		"%s",		"|"	   ,0   },
-	{ netspeed_rx,		"%s⇩",	    "enp7s0" ,0 },
-	{ netspeed_tx,		"%s⇧",	    "enp7s0" ,0 },
-	{ separator,		"%s",		"|"	     ,0 },
-	{ datetime,		    "%s",       "%F %T"  ,0 },
+	/* function format          		argument */
+
+	/* I developed this one <3	 		 */
+	{ pulse_volume,		"%s",		"🔊,🔇"  },
+	{ separator,		"%s",		"|"	 },
+	{ keyboard_indicators,	"%s",		"c n"    },
+	{ separator,		"%s",		"|"	 },
+	{ ram_used,		"%s/",		NULL 	 },
+	{ ram_total,		"%s",		NULL 	 },
+	{ separator,		"%s",		"|"	 },
+	{ netspeed_rx,		"%s⇩",		"enp7s0" },
+	{ netspeed_tx,		"%s⇧",		"enp7s0" },
+	{ separator,		"%s",		"|"	 },
+	{ datetime,		"%s",           "%F %T"  },
 
 };

@@ -63,20 +63,7 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
-
-/* function     format string       function_arguments      update_once*/
 static const struct arg args[] = {
-
-	{ pulse_volume,		"%s",		"🔊,🔇",1   },
-	{ separator,		"%s",		"|"    ,0	},
-	{ keyboard_indicators,	"%s",	"cn"   ,0   },
-	{ separator,		"%s",		"|"	   ,0   },
-	{ ram_used,		    "%s/",		NULL   ,0   },
-	{ ram_total,		"%s",		NULL   ,0   },
-	{ separator,		"%s",		"|"	   ,0   },
-	{ netspeed_rx,		"%s⇩",	    "enp7s0" ,0 },
-	{ netspeed_tx,		"%s⇧",	    "enp7s0" ,0 },
-	{ separator,		"%s",		"|"	     ,0 },
-	{ datetime,		    "%s",       "%F %T"  ,0 },
-
+	/* function format          argument */
+	{ datetime, "%s",           "%F %T" },
 };
