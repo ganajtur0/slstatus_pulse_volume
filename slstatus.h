@@ -79,9 +79,13 @@ const char *uid(void);
 /* volume */
 const char *vol_perc(const char *card);
 
+/* sunset, sunrise */
+const char *sundial(void);
+
 /* pulseaudio volume */
 const char *pulse_volume(const char *chargs);
 
 /* wifi */
 const char *wifi_perc(const char *interface);
 const char *wifi_essid(const char *interface);
+

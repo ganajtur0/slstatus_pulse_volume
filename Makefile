@@ -28,7 +28,8 @@ COM =\
 	components/user\
 	components/volume\
 	components/wifi\
-	components/pulse_volume
+	components/pulse_volume\
+	components/sundial\
 
 all: slstatus
 

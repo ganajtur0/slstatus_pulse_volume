@@ -31,6 +31,7 @@ Features
 - Volume percentage
 - WiFi signal percentage and ESSID
 - PuleAudio server's volume
+- Next time the sun will rise/set
 
 - New epic cool feature: some modules only run when program starts,
                          and on SIGUSR1 signal
@@ -63,4 +64,3 @@ slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
 
 Read the source code, it's fairly simple to understand.
-(Even I understand it)
